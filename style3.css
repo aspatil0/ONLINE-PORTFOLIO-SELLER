@@ -1,0 +1,227 @@
+.page3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.page3 h2 {
+    color: #333;
+}
+
+.page3 p {
+    color: #555;
+}
+
+.portfolio-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}
+
+/* Creative Section */
+.creative-section {
+    background: #ABC2E8;
+    background: radial-gradient(at center, #ABC2E8, #007bff);
+    text-align: center;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 750px;
+}
+
+.creative-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.creative-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: white;
+    color: #007BFF;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Reviews Section */
+.reviews {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.review-card {
+    background: #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.review-card p {
+    margin: 5px 0;
+}
+.footer-wrapper {
+    background-color: black;
+    color: white;
+    padding: 64px 32px;
+    font-family: Arial, sans-serif;
+}
+
+.main-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 64px;
+}
+
+.get-started {
+    flex: 0 0 300px;
+}
+
+.get-started h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 0 16px 0;
+}
+
+.get-started p {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.get-started-button {
+    display: inline-block;
+    background-color: #0066ff;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.get-started-button:hover {
+    background-color: #0052cc;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 32px;
+    flex: 1;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-heading {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #888;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-link:hover {
+    color: #0066ff;
+}
+
+.social-links {
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    display: flex;
+    gap: 16px;
+}
+
+.social-link {
+    color: #888;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .main-footer {
+        flex-direction: column;
+    }
+    .get-started {
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
