@@ -95,13 +95,16 @@ body{
 
 .hero {
     display: flex;
+    justify-content: center;
+    min-height: 100vh;;
+    padding: 2rem;;
+    z-index: 1;
+    text-align: center;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end
-    ;
-    min-height: 100vh;
-    text-align: center;
-    padding: 2rem;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
 }
 
@@ -110,6 +113,8 @@ body{
     line-height: 1.2;
     margin-bottom: 1.5rem;
     max-width: 800px;
+    text-align: center;
+    align-items: center;
 }
 
 .hero p {
@@ -117,6 +122,8 @@ body{
     color: #888;
     max-width: 600px;
     margin-bottom: 2rem;
+    text-align: center;
+    align-items: center;
 }
 
 .portfolio-images {
@@ -127,7 +134,7 @@ body{
     position: relative;
     margin-top: 20px;
 }
-/* Floating Images Section - Improved */
+
 .portfolio-images {
     position: absolute;
     width: 100%;
@@ -165,78 +172,86 @@ body{
   
 }
 
+.hero-left{
+flex-direction: column;
+align-items: flex-start;
+width: 100%;
+max-width: 25vw;
+display: block;
+position: absolute;
+inset: 0% auto 0% 0%;
+}
+
+.hero-right {
+    flex-direction: column;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    max-width: 25vw;
+    display: block;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: auto;
+}
+
 .image-1 {
-    top:10%;
-    left: 5%;
-    
+        opacity: 1;
+        width: 20vw;
+        min-width: 350px;
+        max-width: 400px;
+        position: absolute;
+        box-shadow: 1px 1px 14px #0000001a;
 }
 
 .image-2 {
-    bottom: 5%;
-    left: 5%;
-   
+    width: 19vw;
+    min-width: 300px;
+    margin-top: 15%;
+    margin-right: 15%;
+    inset: 50% 0% auto auto;
 }
 
+
 .image-3 {
-    top: 10%;
-    right: 5%;
-    
+    width: 19vw;
+    min-width: 300px;
+    margin-top: 35%;
+    margin-left: 5%;
+    inset: 0% auto auto 0%;
 }
 
 .image-4 {
-    bottom: 5%;
-    right: 5%;
-    
+    width: 19vw;
+    min-width: 350px;
+    max-width: 400px;
+    margin-top: 35%;
+    margin-left: -6%;
+    inset: 50% auto auto 0%;
 }
 
 .image-5{
-    bottom: 10%;
-    left: 10%;
+        z-index: 1;
+        width: 19vw;
+        min-width: 300px;
+        margin-top: 45%;
+        margin-right: -5%;
+        inset: 50% 0% auto auto;
 }
 
 .image-6{
-    top:20%;
-    right:-10px;
-}
-
-/*
-@keyframes float {
-    0% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-10px) rotate(2deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
-}
-
-.floating-image {
-    animation: float 6s ease-in-out infinite;
+    width: 19vw;
+    min-width: 300px;
+    margin-top: 55%;
+    margin-left: 15%;
+    inset: 0% auto auto 0%;
 }
 
 
-
-
-.image-1 {
-    top:10%;
-    left: 5%;
-    
-}
-
-.image-2 {
-    bottom: 5%;
-    left: 5%;
-   
-}
-
-.image-3 {
-    top: 10%;
-    right: 5%;
-    
-}
-
-.image-4 {
-    bottom: 5%;
-    right: 5%;
-    
-}
-*/
 
 @media (max-width: 768px) {
     .nav-links {
@@ -259,14 +274,19 @@ body{
     
 }
 
-@media (max-width: 768px) {
-    .portfolio-images {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 3rem;
     }
 
-    .floating-image {
-        width: 90%;
-        max-width: 300px; /* Limits size for better fit */
+    
+}
+
+@media (max-width: 768px) {
+    .hero-left {
+        display: none;
+    }
+    .hero-right {
+        display: none;
     }
 }
