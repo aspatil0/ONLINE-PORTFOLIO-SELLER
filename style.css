@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    padding: 0;
+
+}
+.page1 {
+    background-color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: #000;
+    overflow: hidden; /* Prevents overflow */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    height: 60px;
+    font-weight: bold;
+    font-size: 1.2rem
+   
+}
+.btn-2primary {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    font-weight: bold;
+    white-space: nowrap;
+    padding: 10px 10px 10px 10px;  
+    font-size: 14px;
+    max-width: 150px; 
+    text-align: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end
+    ;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #888;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.portfolio-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    margin-top: 20px;
+}
+/* Floating Images Section - Improved */
+.portfolio-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating-image {
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    max-width: 280px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.portfolio-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.floating-image {
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    max-width: 280px;
+  
+}
+
+.image-1 {
+    top:10%;
+    left: 5%;
+    
+}
+
+.image-2 {
+    bottom: 5%;
+    left: 5%;
+   
+}
+
+.image-3 {
+    top: 10%;
+    right: 5%;
+    
+}
+
+.image-4 {
+    bottom: 5%;
+    right: 5%;
+    
+}
+
+.image-5{
+    bottom: 10%;
+    left: 10%;
+}
+
+.image-6{
+    top:20%;
+    right:-10px;
+}
+
+/*
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(2deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.floating-image {
+    animation: float 6s ease-in-out infinite;
+}
+
+
+
+
+.image-1 {
+    top:10%;
+    left: 5%;
+    
+}
+
+.image-2 {
+    bottom: 5%;
+    left: 5%;
+   
+}
+
+.image-3 {
+    top: 10%;
+    right: 5%;
+    
+}
+
+.image-4 {
+    bottom: 5%;
+    right: 5%;
+    
+}
+*/
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .portfolio-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .floating-image {
+        width: 90%;
+        max-width: 300px; /* Limits size for better fit */
+    }
+}
