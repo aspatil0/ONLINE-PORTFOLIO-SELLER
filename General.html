@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Basic_Package </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="General.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="##" alt="LOGO">
+        </div>
+        <div class="nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#packages" class="nav-link">Packages</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+</header>
+
+
+<!-- Floating Bubbles outside the Glassmorphism Frame -->
+<div class="floating-bubbles">
+    <div class="bubble b1"></div>
+    <div class="bubble b2"></div>
+    <div class="bubble b3"></div>
+    <div class="bubble b4"></div>
+    <div class="bubble b5"></div>
+    <div class="bubble b6"></div>
+</div>
+
+
+<!-- Glassmorphism Frame with Parallax Slider Inside -->
+
+<!-- <div class="info">
+    <h1> <marquee behavior="" direction="">CLICK ON THE VISIT SITE BUTTON FOR MORE INFORMATION | DOWNLOAD THE CODE AND SHARE YOUR ONLINE PORTFOLIO</marquee></h1>
+ </div> -->
+
+
+<div class="glass-frame">
+    <div class="slider-container">
+        <div class="slider">
+
+
+            <div class="slide">
+                <img src="template_images/img1.jpg" alt="Template 1">
+                <p>Clean, modern design with a light grey background, bold black and orange typography, and a two-column layout. It features a professional image, clear navigation, social media icons, and a prominent "Hire Me" button for easy engagement.</p>
+                <button class="get-code-btn" onclick="redirectToPage()">Get the Code</button>
+            </div>
+
+            <div class="slide">
+                <img src="template_images/img2.jpg" alt="Template 2">
+                <p>Modern design with a vibrant purple gradient background, bold white typography, and a structured two-column layout featuring an illustrative graphic. It includes a clean navigation bar and a prominent "Get in Touch" button, enhancing user engagement and accessibility.</p>
+                <button class="get-code-btn" onclick="redirectToPage()">Get the Code</button>
+            </div>
+
+            <div class="slide">
+                <img src="template_images/img3.jpg" alt="Template 3">
+                <p>A bold and modern designer portfolio with a deep purple background and vibrant orange accents. The clean layout features bold white typography for a strong first impression. A minimalist navigation bar provides easy access to key sections, while abstract design elements enhance creativity and innovation.</p>
+                <button class="get-code-btn" onclick="redirectToPage()">Get the Code</button>
+            </div>
+
+            <div class="slide">
+                <img src="template_images/img4.jpg" alt="Template 4">
+                <p>A modern and minimalist web design featuring a warm gradient background and a centered white content box. It includes a structured navigation menu, a crescent moon logo, and a clean hero section with a bold headline, subheading, and a workspace image. The design emphasizes simplicity and user-friendliness.</p>
+                <button class="get-code-btn" onclick="redirectToPage()">Get the Code</button>
+            </div>
+
+            <div class="slide">
+                <img src="template_images/img5.jpg" alt="Template 5">
+                <p>A modern and vibrant web design featuring a bold, high-quality close-up image with a warm yellow background. The clean white header showcases a minimalist logo, while structured typography highlights her title. The design enhances personal branding with a bright, engaging aesthetic.</p>
+                <button class="get-code-btn" onclick="redirectToPage()">Get the Code</button>
+            </div>
+
+            <div class="slide">
+                <img src="template_images/img6.jpg" alt="Template 6">
+                <p>Features a dark navy-blue landing page with bold, centered white typography over a scenic ocean backdrop. It includes a prominent headline, supporting subheadline, a minimalist "DEFAULT" call-to-action button, and a streamlined "MENU" option in the top right corner.</p>
+                <button class="get-code-btn" onclick="redirectToPage()">Get the Code</button>
+            </div>
+
+            <div class="slide">
+                <img src="template_images/img7.jpg" alt="Template 7">
+                <p>Features a dark, minimalist landing page with bold white text showcasing a designer's statement. It includes a subtle background image of a person, a prominent headline, two call-to-action buttons, and a clean navigation menu at the top right.</p>
+                <button class="get-code-btn" onclick="redirectToPage()">Get the Code</button>
+            </div>
+
+            <div class="slide">
+                <img src="template_images/img8.jpg" alt="Template 8">
+                <p>Shows a clean, modern landing page with a light background. It features a smiling man on the left, a bold introduction on the right, a brief description, and a gradient "Discover Now" button. The top navigation menu includes links to Home, About, Services, Pages, Blog, and Contact.</p>
+                <button class="get-code-btn" onclick="redirectToPage()">Get the Code</button>
+            </div>
+        </div>
+
+
+        <!-- Arrows -->
+        <button class="arrow arrow-left" onclick="prevSlide()" aria-label="Previous Slide"> 
+            <i class="fa-solid fa-circle-chevron-left"></i> 
+        </button>
+
+        <button class="arrow arrow-right" onclick="nextSlide()" aria-label="Next Slide"> 
+            <i class="fa-solid fa-circle-chevron-right"></i>
+         </button>
+
+    </div>
+</div>
+
+    <script src="General.js" defer></script>
+
+</body>
+</html>
