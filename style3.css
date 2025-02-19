@@ -225,3 +225,50 @@ h1 {
         grid-template-columns: 1fr;
     }
 }
+
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+
+    .footer-grid {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .review-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card {
+        width: 90%;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+}
