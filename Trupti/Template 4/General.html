@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+            animation: fadeIn 3s ease-in;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+        .text-container {
+            margin: 20px auto; /* Center the text container */
+            padding: 20px;
+            max-width: 800px; /* Adjust the max-width as needed */
+            border: 2px solid #21bac2; /* Add a border */
+            border-radius: 10px; /* Rounded corners */
+            animation: slideIn 1s ease-out;
+            font-size: 1.2em; /* Adjust the font size as needed */
+            line-height: 1.5em; /* Adjust the line height for better readability */
+            text-align: center; /* Center the text within this container */
+        }
+        .download-buttons {
+            margin-top: 20px;
+            text-align: center; /* Center the download buttons */
+        }
+        .download-buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #21bac2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+            font-weight: 600; /* Make the button text bold */
+        }
+        .download-buttons a:hover {
+            transform: scale(1.1);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        .slide-in {
+            animation: slideIn 1s ease-out;
+        }
+      
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Scroll down for download</h1>
+    </div>
+    <div class="main">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SKILLS</a></li>
+                <li><a href="#">MY WORKS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h3>Hi, I'm <span>Ariana</span>.</h3>
+            <h1><span>W</span>EB <span>D</span>ESIGNER</h1>
+            <h3>Web designer and developer from California, USA. 
+                I create <br> websites to do businesses do better <br> online.</h3>
+                <a href="#">Hire Me</a>
+        </div>
+
+        <div class="image">
+            <img src="girl.png" class="girl">
+        </div>
+
+        <div class="icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        </div>
+    </div>
+    <div class="text-container">
+        <p>Hi, I'm Ariana - Web Designer. I'm a passionate web designer from California, USA, with a keen eye for detail and a love for creativity. 
+        My mission is to transform ideas into visually stunning and user-friendly websites that help businesses thrive online.
+        With years of experience and a diverse skill set, I take pride in delivering high-quality designs that leave a lasting impression.</p>
+    </div>
+    <div class="download-buttons">
+        <a href="/Files/Download.zip" download>Download ZIP</a>
+        <a href="/Files/Download.tar" download>Download TAR</a>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    
+</html>
